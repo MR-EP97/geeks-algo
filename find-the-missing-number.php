@@ -20,12 +20,12 @@ function findTheMissingNumber(array $arr)
     $len = count($arr); 
     for ($i = 0 ; $i < $len-1; $i++ )
     {
-        if ($arr[$i]+1 === $arr[$i+1] ) {
-            echo $arr[$i];
+        if (!($arr[$i]+1 === $arr[$i+1]) ) {
+            echo $arr[$i]+1;
         }
     }
 }
 
-$array = [1,2,3,4,5,6,8,9,10];
+$array = [1,2,3,4,5,6,7,8,9,10];
 
 echo findTheMissingNumber($array);
