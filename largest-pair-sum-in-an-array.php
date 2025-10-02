@@ -23,4 +23,4 @@ for ($i = 0; $i < $len; $i++) {
     
 }
 
-echo $max_number_1 + $max_number_2 ;
+return $max_number_1 + $max_number_2 ;
